@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">appTsane</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="/img/sane.jpg" width="50" height="50"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,6 +25,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    <img src="/img/logo carrito.png" alt="" width="50" height="50">
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -36,11 +37,32 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - appTsane - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+<!-- footer-->
+    <footer id="footer">
+    <div class="footer-top">
+      <div class="container" data-aos="fade-up">
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Tecnologia SANE</h3>
+            <p>Dirección: av.la fontana </p>
+            <p>Telefono: +51 939277144</p>
+            <p>nosotros</p>
+          </div>
         </div>
-    </footer>
+        
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Copyright</span></strong>. Todos los derechos reservador
+      </div>
+      <div class="credits">
+        Diseñado por <a href="#"> sane</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- fin footer-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
