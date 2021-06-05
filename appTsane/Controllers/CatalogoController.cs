@@ -29,12 +29,21 @@ namespace appTsane.Controllers
             _userManager = userManager;
         }
 
-       public async Task<IActionResult> Index()
+        
+       public async Task<IActionResult> Index(string searchString)
         {
+            ViewData["CurrentFilter"]=searchString;
             var productos = from o in _context.Producto select o;
             productos = productos.Where(s => s.Status.Equals("A"));
+             if (!String.IsNullOrEmpty(searchString)){
+                productos = productos.Where(o=>o.Name.Contains(searchString));
+            }
+            
             return View(await productos.ToListAsync());
+            
         }
+
+
 
 public async Task<IActionResult> Add(int? id)
         {

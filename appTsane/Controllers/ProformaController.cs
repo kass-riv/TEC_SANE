@@ -28,13 +28,18 @@ namespace plantitas.Controllers
         // GET: Proforma
         public async Task<IActionResult> Index()
         {
+            
             var userID = _userManager.GetUserName(User);
             var items = from o in _context.Carrito select o;
             items = items.
                 Include(p => p.Producto).
                 Where(s => s.UserID.Equals(userID));
             
+           
+            
             return View(await items.ToListAsync());
+            
+           
             
         }
 
