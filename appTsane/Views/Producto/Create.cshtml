@@ -5,9 +5,9 @@
 }
 
 
-<h2>Create</h2>
+<h2>Crear Producto</h2>
 
-<h4>Producto</h4>
+
 <hr />
 
 <div class="row">
@@ -20,33 +20,32 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label asp-for="Price" class="control-label">Precio</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImagenName" class="control-label"></label>
+                <label asp-for="ImagenName" class="control-label">Imagen</label>
                 <input asp-for="ImagenName" class="form-control" />
                 <span asp-validation-for="ImagenName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
+                <label asp-for="Status" class="control-label">Estado</label>
                 <select asp-for="Status" class="form-control" >
-                     <option value="A">Active</option>
-                     <option value="I">Inactive</option>
+                     <option value="A">Activo</option>
+                     <option value="I">Inactivo</option>
                 </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>            
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
+                 <a asp-action="Index"><button class="btn btn-success"> Regresar</button></a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
