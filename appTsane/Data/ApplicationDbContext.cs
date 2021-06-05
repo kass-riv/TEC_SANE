@@ -14,8 +14,12 @@ namespace appTsane.Data
         {
 
         }
-        public DbSet<appTsane.Models.Cliente> DataClientes { get; set; }
-        
+        public DbSet<appTsane.Models.Contacto> Contacto { get; set; }
+        public DbSet<appTsane.Models.Proforma> Carrito { get; set; }
+
+        public DbSet<appTsane.Models.Producto> Producto { get; set; }
+
+        public DbSet<appTsane.Models.Pedido> Pedido { get; set; }
 
     }
 }

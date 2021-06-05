@@ -1,0 +1,38 @@
+
+@model appTsane.Models.Contacto
+
+
+<h1>Contactenos</h1>
+<table style="width:100%">
+<tr>
+    <td>
+
+
+     <form asp-controller="Contacto" asp-action="Create">
+     <label asp-for="Name" class="control-label"></label>
+     <input asp-for="Name" class="form-control" />
+
+     <label asp-for="Email" class="control-label"></label>
+     <input asp-for="Email" class="form-control" />
+
+     <label asp-for="Phone" class="control-label"></label>
+     <input asp-for="Phone" class="form-control" />
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Registrar</button> 
+    </div>              
+
+</form>
+<h1>@ViewData["Message"]</h1>
+    
+    </td>
+    <td style="width: 20%;">
+        <h1>O</h1>
+    </td>
+    <td>
+        <h2>Llámenos al:</h2>
+        <br>
+        <h3>+51 9964578</h3>
+    </td>
+</tr>
+</table>

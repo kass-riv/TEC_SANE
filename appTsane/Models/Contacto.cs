@@ -1,11 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System;
+using appTsane.Models;
 
 
 namespace appTsane.Models{
 
-    [Table("t_cliente")]
-    public class Cliente{
+    [Table("t_contact")]
+    public class Contacto{
 
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Column("id")]
@@ -16,15 +18,13 @@ namespace appTsane.Models{
     [Display(Name = "Nombre")]
     public string Name { get; set; }
     
-    [Display(Name="Email")]
-    [Column("email")]
+    
     public string Email { get; set; }
 
-    [DataType(DataType.PhoneNumber)]
-    [Display(Name="Telefono")]
-    [Column("phone")]
+    
     public string Phone { get; set; }
 
+    
 }
 
 }
