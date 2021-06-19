@@ -21,7 +21,7 @@ namespace appTsane.Models{
         public Decimal Price { get; set; }
 
 [Required(ErrorMessage = "Please enter Image Name")]
-        public String ImagenName { get; set; }
+        public string ImagenName { get; set; }
 
 [Required(ErrorMessage = "Please enter Due Date")]
         public DateTime DueDate { get; set; }
