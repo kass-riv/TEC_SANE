@@ -67,6 +67,16 @@ namespace plantitas.Controllers
             return View();
         }
 
+        public IActionResult Comprar()
+        {
+            return View();
+        }
+
+        public IActionResult CompraConfirmada()
+        {
+            return View();
+        }
+
         // POST: Proforma/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
